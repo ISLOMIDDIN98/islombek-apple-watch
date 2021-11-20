@@ -18,9 +18,9 @@ flex-direction: column;
 height: 100%;
 padding: 0;
 margin: 0;
-font-family:"arial", serif;
-font-size: 16px;
-line-height: 1.5;
+font-family:"Roboto";
+font-size: 15px;
+line-height: 24px;
 background-color: #fff;
 color: #000;
 
@@ -35,7 +35,7 @@ height: auto;
 
 .container{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1350px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -47,4 +47,259 @@ height: auto;
 
 .main-content{
   flex-grow: 1;
+}
+
+/* site-heading */
+.site-heading {
+display: flex;
+
+width: 1250px;
+align-items: center;
+justify-content: space-between;
+padding-left: 125px;
+padding-right: 125px;
+
+}
+.apple-icon {
+  width: 35px;
+
+padding: 0;
+padding-top: 30px;
+}
+.sitenav {
+  display: flex;
+  align-items: center;
+}
+.sitenav-list {
+  display: flex;
+
+}
+
+.sitenav-item {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 150%;
+  text-align: center;
+list-style: none;
+
+
+}
+
+.sitenav-item:not(:last-child){
+  padding-right: 30px;
+}
+
+.sitenav-item:last-child{
+  padding-right: 40px;
+}
+
+.sitenav-link {
+  text-decoration: none;
+  color: #333333;
+}
+.search-form {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 150%;
+  align-items: center;
+
+border: 0px;
+padding-bottom: 6px;
+border-bottom: 1px solid #333;
+}
+.search-form-text {
+
+  width: 165px;
+  padding: 0px;
+  margin: 0px;
+border: 0px;
+
+color: #666;
+}
+.site-main {
+
+}
+.site-main-section {
+  display: flex;
+}
+.container {
+}
+.main-hero {
+
+  padding-left: 125px;
+
+
+}
+.main-hero-headding {
+width: 331px;
+height: 60px;
+  font-weight: bold;
+font-size: 50px;
+line-height: 120%;
+
+color: #000000;
+margin: 0;
+margin-bottom: 30px;
+margin-top: 170px;
+
+}
+.main-hero-text {
+  width: 493px;
+  font-size: 16px;
+line-height: 150%;
+  color: #777;
+
+  border-left: 3px solid #888;
+  padding: 0px;
+  margin: 0px;
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+.main-button-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  padding: 12px;
+  background-color: #EA625C;
+}
+.main-button {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+    text-align: center;
+  text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #EA625C;
+    border: 0px;
+}
+.watch-red {
+  width: 587px;
+  height: 563px;
+  margin-top: 85px;
+margin-left: 245px;
+  background-image: url(../img/watch-red.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.hr {
+  margin: 1px;
+}
+.main-card {
+  display: flex;
+  justify-content: space-between;
+  width: 1250px;
+  padding-left: 125px;
+  padding-right: 125px;
+}
+.horizantal-card {
+  width: 280px;
+
+}
+
+.horizantal-card:not(:last-child){
+  padding-right: 80px;
+}
+.card-heading {
+  width: 280px;
+    font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+    text-transform: uppercase;
+    color: #222222;
+    margin-top: 68px;
+}
+.card-text {
+width: 279px;
+
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 160%;
+color: #333333;
+}
+.card-footer-img {
+}
+.card-link {
+  width: 99px;
+height: 26px;
+font-weight: bold;
+font-size: 16px;
+line-height: 160%;
+text-transform: uppercase;
+text-decoration: none;
+color: #EA625C;
+padding-left: 40px;
+margin: 0px 10px;
+}
+
+.card-link-line{
+  background-image: url(../img/Line\ 3.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+
+/* Main-middle */
+.site-main-section{
+
+}
+.main-middle-heading{
+  width: 380px;
+  height: 180px;
+  margin-top: 246px;
+
+
+}
+
+.main-middle-text{
+  width: 450px;
+  height: 96px;
+
+}
+
+.watch-in-hend{
+
+
+}
+
+.watch-in-hend-img{
+  width: 400px;
+  height: 600px;
+  margin: 0;
+  margin-top: 140px;
+  margin-left: 110px;
+}
+
+.main-aside {
+
+  width: 1350px;
+  height: 830.19px;
+  margin-top: 70px;
+  background-image: url(../img/Mountain-climbing.jpg);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center center;
+}
+
+.main-aside-box{
+  width: 490px;
+  padding-top: 72px;
+  padding-left: 635px;
+
+}
+
+.main-footer-heading {
+  width: 490px;
+  height: 120px;
+  color:#fff;
+}
+
+.main-footer-text {
+  width: 450px;
+  height: 120px;
+  color: #fff;
+  border-color: #fff;
 }
