@@ -1,3 +1,8 @@
+:root{
+  --premary: #EA625C;
+}
+
+
 html{
   box-sizing:border-box;
   height: 100%;
@@ -11,6 +16,10 @@ html{
   box-sizing:inherit;
 }
 
+*:focus{
+  outline: 1px dashed #EA625C;
+  outline-offset: 2px;
+}
 
 body{
 display: flex;
@@ -42,6 +51,36 @@ height: auto;
   margin-right: auto;
 }
 
+/* BUTTON */
+
+.button{
+  display: flex;
+justify-content: center;
+align-items: center;
+width: 260px;
+padding: 12px 38px;
+bottom: 0;
+background-color:var(--premary);
+color: #fff;
+font-size: 18px;
+line-height: 1.5;
+font-weight: bold;
+text-decoration: none;
+text-transform: uppercase;
+margin-top: 30px;
+transition: background-color 0.3s ease;
+}
+
+.button:hover{
+  background-color: #C9514C;
+}
+
+.button:active{
+  opacity: 0.6;
+}
+
+
+
 
 /* MAIN-CONTENT */
 
@@ -58,21 +97,22 @@ align-items: center;
 justify-content: space-between;
 padding-left: 125px;
 padding-right: 125px;
-
+margin-top: 30px;
 }
 .apple-icon {
   width: 35px;
 
 padding: 0;
-padding-top: 30px;
+
 }
 .sitenav {
   display: flex;
   align-items: center;
+
 }
 .sitenav-list {
   display: flex;
-
+  margin-right: 40px;
 }
 
 .sitenav-item {
@@ -89,13 +129,19 @@ list-style: none;
   padding-right: 30px;
 }
 
-.sitenav-item:last-child{
+/* .sitenav-item:last-child{
   padding-right: 40px;
-}
+} */
 
 .sitenav-link {
   text-decoration: none;
   color: #333333;
+border-bottom: 1px solid transparent;
+
+}
+
+.sitenav-link:hover{
+  border-bottom: 1px solid #333;
 }
 .search-form {
   font-weight: normal;
@@ -155,25 +201,7 @@ line-height: 150%;
   padding-left: 40px;
   margin-bottom: 30px;
 }
-.main-button-div{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 260px;
-  padding: 12px;
-  background-color: #EA625C;
-}
-.main-button {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 150%;
-    text-align: center;
-  text-transform: uppercase;
-    color: #FFFFFF;
-    background-color: #EA625C;
-    border: 0px;
-}
+
 .watch-red {
   width: 587px;
   height: 563px;
@@ -223,24 +251,40 @@ color: #333333;
 .card-footer-img {
 }
 .card-link {
-  width: 99px;
-height: 26px;
-font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+
+
 font-size: 16px;
-line-height: 160%;
+line-height: 1.6;
+font-weight: bold;
 text-transform: uppercase;
 text-decoration: none;
 color: #EA625C;
-padding-left: 40px;
-margin: 0px 10px;
+
 }
 
-.card-link-line{
-  background-image: url(../img/Line\ 3.svg);
-  background-repeat: no-repeat;
-  background-position: left center;
+.card-link::before {
+  width: 40px;
+  height: 3px;
+  margin-right: 10px;
+  background-color: rgb(197, 31, 31);
+  content: "";
+  transition: width 0.3s ease;
 }
 
+.card-link:hover::before{
+  width: 60px;
+}
+
+.features-dvider{
+  width: 8px;
+  height: 8px;
+  border: 0;
+margin-left: 0;
+background-color: #ddd;
+box-shadow: 16px 0 0 0 #ddd, 32px 0 0 0 #ddd;
+}
 
 /* Main-middle */
 .site-main-section{
@@ -279,9 +323,12 @@ margin: 0px 10px;
   height: 830.19px;
   margin-top: 70px;
   background-image: url(../img/Mountain-climbing.jpg);
-  background-repeat: no-repeat;
-  /* background-size: cover; */
   background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+
 }
 
 .main-aside-box{
